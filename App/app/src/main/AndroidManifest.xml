@@ -2,13 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app">
 
-    <supports-screens>
-        android:largeScrens="true"
-        android:normalScrens="true"
-        android:xlargeScrens="true"
-        android:smallScrens="true"
-
-    </supports-screens>
 
     <application
         android:allowBackup="true"
