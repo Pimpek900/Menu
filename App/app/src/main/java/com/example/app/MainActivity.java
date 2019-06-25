@@ -8,14 +8,14 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    public void Kalkulator(View view){
+        Intent intent = new Intent(MainActivity.this, kalkulator.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    public void Kalkulator(View view){
-        Intent intent = new Intent(MainActivity.this, kalkulator.class);
-        startActivity(intent);
     }
 }
