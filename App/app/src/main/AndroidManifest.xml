@@ -5,8 +5,8 @@
     <supports-screens>
         android:largeScrens="true"
         android:normalScrens="true"
-        android:smallScrens="true"
         android:xlargeScrens="true"
+        android:smallScrens="true"
 
     </supports-screens>
 
