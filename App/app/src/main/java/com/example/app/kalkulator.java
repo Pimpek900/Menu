@@ -126,7 +126,7 @@ public class kalkulator extends AppCompatActivity {
             public void onClick(View view) {
                 compute();
                 ACTION = DODAWANIE;
-                wynik.setText(String.valueOf(val1) + "+");
+                wynik.setText(val1 + "+");
                 Info.setText(null);
             }
         });
@@ -136,7 +136,7 @@ public class kalkulator extends AppCompatActivity {
             public void onClick(View view) {
                 compute();
                 ACTION = ODEJMOWANIE;
-                wynik.setText(String.valueOf(val1) + "-");
+                wynik.setText(val1 + "-");
                 Info.setText(null);
             }
         });
@@ -146,7 +146,7 @@ public class kalkulator extends AppCompatActivity {
             public void onClick(View view) {
                 compute();
                 ACTION = MNOŻENIE;
-                wynik.setText(String.valueOf(val1) + "*");
+                wynik.setText(val1 + "*");
                 Info.setText(null);
             }
         });
@@ -156,7 +156,7 @@ public class kalkulator extends AppCompatActivity {
             public void onClick(View view) {
                 compute();
                 ACTION = DZIELENIE;
-                wynik.setText(String.valueOf(val1) + "/");
+                wynik.setText(val1 + "/");
                 Info.setText(null);
             }
         });
@@ -166,7 +166,7 @@ public class kalkulator extends AppCompatActivity {
             public void onClick(View view) {
                 compute();
                 ACTION = EQU;
-                wynik.setText(wynik.getText().toString() + String.valueOf(val2) + "=" + String.valueOf(val1));
+                wynik.setText(wynik.getText().toString() + val2 + "=" + val1);
                 Info.setText(null);
             }
         });
@@ -193,25 +193,25 @@ public class kalkulator extends AppCompatActivity {
 
     private void setupUPViews()
     {
-        jeden = (Button)findViewById(R.id.guzik1);
-        zero = (Button)findViewById(R.id.guzik0);
-        dwa = (Button)findViewById(R.id.guzik2);
-        trzy = (Button)findViewById(R.id.guzik3);
-        cztery = (Button)findViewById(R.id.guzik4);
-        piec = (Button)findViewById(R.id.guzik5);
-        szesc = (Button)findViewById(R.id.guzik6);
-        siedem = (Button)findViewById(R.id.guzik7);
-        osiem = (Button)findViewById(R.id.guzik8);
-        dziewiec = (Button)findViewById(R.id.guzik9);
-        dodac = (Button)findViewById(R.id.dodawanko);
-        odjac = (Button)findViewById(R.id.odejmianie);
-        razy = (Button)findViewById(R.id.mnożenie);
-        podzielic = (Button)findViewById(R.id.dzielenie);
-        kropka = (Button)findViewById(R.id.kropka);
-        Enter = (Button)findViewById(R.id.enter);
-        Info = (TextView)findViewById(R.id.Info);
-        wynik = (TextView)findViewById(R.id.Wynik);
-        C = (Button)findViewById(R.id.C);
+        jeden = findViewById(R.id.guzik1);
+        zero = findViewById(R.id.guzik0);
+        dwa = findViewById(R.id.guzik2);
+        trzy = findViewById(R.id.guzik3);
+        cztery = findViewById(R.id.guzik4);
+        piec = findViewById(R.id.guzik5);
+        szesc = findViewById(R.id.guzik6);
+        siedem = findViewById(R.id.guzik7);
+        osiem = findViewById(R.id.guzik8);
+        dziewiec = findViewById(R.id.guzik9);
+        dodac = findViewById(R.id.dodawanko);
+        odjac = findViewById(R.id.odejmianie);
+        razy = findViewById(R.id.mnożenie);
+        podzielic = findViewById(R.id.dzielenie);
+        kropka = findViewById(R.id.kropka);
+        Enter = findViewById(R.id.enter);
+        Info = findViewById(R.id.Info);
+        wynik = findViewById(R.id.Wynik);
+        C = findViewById(R.id.C);
     }
 
     private void compute()
