@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class kik extends AppCompatActivity implements View.OnClickListener {
+public class kik extends AppCompatActivity implements OnClickListener {
 
     private Button[][] buttons = new Button[3][3];
     private boolean player1Turn = true;
@@ -28,16 +29,18 @@ public class kik extends AppCompatActivity implements View.OnClickListener {
         textViewPlayer1 = findViewById(R.id.player1);
         textViewPlayer2 = findViewById(R.id.player2);
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 String buttonID = "button_" + i + j;
                 int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 buttons[i][j] = findViewById(resID);
                 buttons[i][j].setOnClickListener(this);
+                // buttons[i][j].setOnClickListener(this);
             }
+        }
 
-        Button button_reset = findViewById(R.id.button_reset);
-        button_reset.setOnClickListener(new View.OnClickListener() {
+        Button reset = findViewById(R.id.reset);
+            reset.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 resetGame();
