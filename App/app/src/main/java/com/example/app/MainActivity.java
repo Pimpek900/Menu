@@ -22,4 +22,10 @@ public class MainActivity extends AppCompatActivity {
     Intent intent = new Intent(MainActivity.this, GameMenu.class);
     startActivity(intent);
     }
+
+    public void Stoper(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, Stoper.class);
+        startActivity(intent);
+    }
 }
