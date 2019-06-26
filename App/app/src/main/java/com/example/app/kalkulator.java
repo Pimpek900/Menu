@@ -114,6 +114,13 @@ public class kalkulator extends AppCompatActivity {
             }
         });
 
+        kropka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Info.setText(Info.getText().toString() + ".");
+            }
+        });
+
         dodac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
