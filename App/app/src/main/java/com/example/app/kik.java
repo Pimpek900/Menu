@@ -1,5 +1,6 @@
 package com.example.app;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -28,21 +29,18 @@ public class kik extends AppCompatActivity implements View.OnClickListener {
         textViewPlayer2 = findViewById(R.id.player2);
 
         for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 3; j++)
-            {
+            for (int j = 0; j < 3; j++) {
                 String buttonID = "button_" + i + j;
                 int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 buttons[i][j] = findViewById(resID);
                 buttons[i][j].setOnClickListener(this);
             }
-        }
 
         Button button_reset = findViewById(R.id.button_reset);
         button_reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                resetGame();
             }
         });
     }
@@ -167,4 +165,31 @@ public class kik extends AppCompatActivity implements View.OnClickListener {
         player1Turn = true;
     }
 
+    private void resetGame()
+    {
+        player1Points = 0;
+        player2Points = 0;
+        updatePointsText();
+        resetBoard();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("roundCount", roundCount);
+        outState.putInt("player1Points", player1Points);
+        outState.putInt("player2Points", player2Points);
+        outState.putBoolean("player1Turn", player1Turn);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        roundCount = savedInstanceState.getInt("roundCount");
+        player1Points = savedInstanceState.getInt("player1Points");
+        player2Points = savedInstanceState.getInt("player2Points");
+        player1Turn = savedInstanceState.getBoolean("player1Turn");
+    }
 }
