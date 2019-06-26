@@ -15,5 +15,6 @@ public class GameMenu extends AppCompatActivity {
     }
     public void kik(View view){
         Intent intent = new Intent(GameMenu.this, kik.class);
+        startActivity(intent);
     }
 }
