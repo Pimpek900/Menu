@@ -12,3 +12,4 @@ public class Stoper extends AppCompatActivity {
         setContentView(R.layout.activity_stoper);
     }
 }
+//siubrhg
