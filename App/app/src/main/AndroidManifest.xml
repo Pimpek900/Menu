@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kik"></activity>
+        <activity android:name=".kik" />
         <activity android:name=".GameMenu" />
         <activity android:name=".kalkulator" />
         <activity android:name=".MainActivity">
