@@ -35,7 +35,6 @@ public class kik extends AppCompatActivity implements OnClickListener {
                 int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 buttons[i][j] = findViewById(resID);
                 buttons[i][j].setOnClickListener(this);
-                // buttons[i][j].setOnClickListener(this);
             }
         }
 
