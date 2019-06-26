@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, kalkulator.class);
         startActivity(intent);
     }
-    public void notatnik(View view){
-    Intent intent = new Intent(MainActivity.this, Notatnik.class);
+    public void Gry(View view){
+    Intent intent = new Intent(MainActivity.this, GameMenu.class);
     startActivity(intent);
     }
 }
