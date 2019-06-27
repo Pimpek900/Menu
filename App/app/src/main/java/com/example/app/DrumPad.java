@@ -3,11 +3,14 @@ package com.example.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 
 public class DrumPad extends AppCompatActivity {
+
+    MediaPlayer mp = MediaPlayer.create(DrumPad.this,R.raw.sound6);
 
     private SoundPool sp;
     private int sound1;
@@ -24,6 +27,8 @@ public class DrumPad extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drum_pad);
+
+
 
         sp = new SoundPool(2, AudioManager.STREAM_MUSIC,0);
         sound1 = sp.load(getApplicationContext(),R.raw.sound1,1);
@@ -52,7 +57,8 @@ public class DrumPad extends AppCompatActivity {
         sp.play(sound5,1.0f,1.0f,0,0,10f);
     }
     public void playsound6(View view){
-        sp.play(sound6,1.0f,1.0f,0,0,10f);
+        //sp.play(sound6,1.0f,1.0f,0,0,1f);
+        mp.start();
     }
     public void playsound7(View view){
         sp.play(sound7,1.0f,1.0f,0,0,10f);
