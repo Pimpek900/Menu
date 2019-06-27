@@ -3,11 +3,16 @@ package com.example.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class DrumPad extends AppCompatActivity {
+
+    Button start, stop, pause;
+    MediaPlayer mp;
 
     private SoundPool sp;
     private int sound1;
@@ -19,6 +24,8 @@ public class DrumPad extends AppCompatActivity {
     private int sound7;
     private int sound8;
     private int sound9;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +43,30 @@ public class DrumPad extends AppCompatActivity {
         sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
     }
-    public void playsound1(View view) { sp.play(sound1,1.0f,1.0f,0,0,1f); }
-    public void playsound2(View view) { sp.play(sound2,1.0f,1.0f,0,0,1f); }
-    public void playsound3(View view) { sp.play(sound3,1.0f,1.0f,0,0,1f); }
-    public void playsound4(View view) { sp.play(sound4,1.0f,1.0f,0,0,1f); }
-    public void playsound5(View view) { sp.play(sound5,1.0f,1.0f,0,0,1f); }
-    public void playsound6(View view) { sp.play(sound6,1.0f,1.0f,1,0,1f); }
-    public void playsound7(View view) { sp.play(sound7,1.0f,1.0f,0,0,1f); }
-    public void playsound8(View view) { sp.play(sound8,1.0f,1.0f,0,0,1f); }
-    public void playsound9(View view) { sp.play(sound9,1.0f,1.0f,0,0,1f); }
+    public void playsound1(View view) { sp.play(sound1,0.5f,0.5f,0,0,1f); }
+    public void playsound2(View view) { sp.play(sound2,0.5f,0.5f,0,0,1f); }
+    public void playsound3(View view) { sp.play(sound3,0.5f,0.5f,0,0,1f); }
+    public void playsound4(View view) { sp.play(sound4,0.5f,0.5f,0,0,1f); }
+    public void playsound5(View view) { sp.play(sound5,0.5f,0.5f,0,0,1f); }
+    public void playsound6(View view) { sp.play(sound6,0.5f,0.5f,0,0,1f); }
+    public void playsound7(View view) { sp.play(sound7,0.5f,0.5f,0,0,1f); }
+    public void playsound8(View view) { sp.play(sound8,0.5f,0.5f,0,0,1f); }
+    public void playsound9(View view) { sp.play(sound9,0.5f,0.5f,0,0,1f); }
+
+    public void onClick(View view){
+        switch(view.getId()){
+            case R.id.start:
+                mp = MediaPlayer.create(getApplicationContext(),R.raw.sound00);
+                mp.start();
+                break;
+
+            case R.id.pause:
+
+                break;
+            case R.id.stop:
+                mp.stop();
+                break;
+        }
+    }
+
 }
