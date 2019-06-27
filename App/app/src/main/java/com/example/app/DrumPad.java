@@ -3,6 +3,7 @@ package com.example.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
@@ -41,7 +42,7 @@ public class DrumPad extends AppCompatActivity {
     public void playsound3(View view) { sp.play(sound3,1.0f,1.0f,0,0,1f); }
     public void playsound4(View view) { sp.play(sound4,1.0f,1.0f,0,0,1f); }
     public void playsound5(View view) { sp.play(sound5,1.0f,1.0f,0,0,1f); }
-    public void playsound6(View view) { sp.play(sound6,1.0f,1.0f,0,0,1f); }
+    public void playsound6(View view) { sp.play(sound6,1.0f,1.0f,1,0,1f); }
     public void playsound7(View view){
         sp.play(sound7,1.0f,1.0f,0,0,1f);
     }
