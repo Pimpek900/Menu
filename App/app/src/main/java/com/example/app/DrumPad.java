@@ -10,8 +10,6 @@ import android.view.View;
 
 public class DrumPad extends AppCompatActivity {
 
-    MediaPlayer mp = MediaPlayer.create(DrumPad.this,R.raw.sound6);
-
     private SoundPool sp;
     private int sound1;
     private int sound2;
@@ -28,8 +26,6 @@ public class DrumPad extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drum_pad);
 
-
-
         sp = new SoundPool(2, AudioManager.STREAM_MUSIC,0);
         sound1 = sp.load(getApplicationContext(),R.raw.sound1,1);
         sound2 = sp.load(getApplicationContext(),R.raw.sound2,1);
@@ -41,32 +37,19 @@ public class DrumPad extends AppCompatActivity {
         sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
     }
-    public void playsound1(View view){
-        sp.play(sound1,1.0f,1.0f,0,0,10f);
-    }
-    public void playsound2(View view){
-        sp.play(sound2,1.0f,1.0f,0,0,10f);
-    }
-    public void playsound3(View view){
-        sp.play(sound3,1.0f,1.0f,0,0,10f);
-    }
-    public void playsound4(View view){
-        sp.play(sound4,1.0f,1.0f,0,0,10f);
-    }
-    public void playsound5(View view){
-        sp.play(sound5,1.0f,1.0f,0,0,10f);
-    }
-    public void playsound6(View view){
-        //sp.play(sound6,1.0f,1.0f,0,0,1f);
-        mp.start();
-    }
+    public void playsound1(View view) { sp.play(sound1,1.0f,1.0f,0,0,1f); }
+    public void playsound2(View view) { sp.play(sound2,1.0f,1.0f,0,0,1f); }
+    public void playsound3(View view) { sp.play(sound3,1.0f,1.0f,0,0,1f); }
+    public void playsound4(View view) { sp.play(sound4,1.0f,1.0f,0,0,1f); }
+    public void playsound5(View view) { sp.play(sound5,1.0f,1.0f,0,0,1f); }
+    public void playsound6(View view) { sp.play(sound6,1.0f,1.0f,1,0,1f); }
     public void playsound7(View view){
-        sp.play(sound7,1.0f,1.0f,0,0,10f);
+        sp.play(sound7,1.0f,1.0f,0,0,1f);
     }
     public void playsound8(View view){
-        sp.play(sound8,1.0f,1.0f,0,0,10f);
+        sp.play(sound8,1.0f,1.0f,0,0,1f);
     }
     public void playsound9(View view){
-        sp.play(sound9,1.0f,1.0f,0,0,10f);
+        sp.play(sound9,1.0f,1.0f,0,0,1f);
     }
 }
