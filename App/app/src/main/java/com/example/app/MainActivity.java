@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     Intent intent = new Intent(MainActivity.this, GameMenu.class);
     startActivity(intent);
     }
-    public void selenium(View view){
-        Intent intent = new Intent(MainActivity.this, Selenium.class);
+    public void DrumPad(View view){
+        Intent intent = new Intent(MainActivity.this, DrumPad.class);
         startActivity(intent);
     }
 

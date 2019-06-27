@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Selenium"></activity>
+        <activity android:name=".DrumPad"></activity>
         <activity android:name=".Stoper" />
         <activity android:name=".kik" />
         <activity android:name=".GameMenu" />
