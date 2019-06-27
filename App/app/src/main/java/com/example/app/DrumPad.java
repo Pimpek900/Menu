@@ -31,7 +31,7 @@ public class DrumPad extends AppCompatActivity {
         sound3 = sp.load(getApplicationContext(),R.raw.sound3,1);
         sound4 = sp.load(getApplicationContext(),R.raw.sound4,1);
         sound5 = sp.load(getApplicationContext(),R.raw.sound5,1);
-        sound6 = sp.load(getApplicationContext(),R.raw.sound6,1);
+       // sound6 = sp.load(getApplicationContext(),R.raw.sound6,1);
         sound7 = sp.load(getApplicationContext(),R.raw.sound7,1);
         sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
@@ -52,7 +52,7 @@ public class DrumPad extends AppCompatActivity {
         sp.play(sound5,1.0f,1.0f,0,0,10f);
     }
     public void playsound6(View view){
-        sp.play(sound6,1.0f,1.0f,0,0,10f);
+       // sp.play(sound6,1.0f,1.0f,0,0,10f);
     }
     public void playsound7(View view){
         sp.play(sound7,1.0f,1.0f,0,0,10f);
