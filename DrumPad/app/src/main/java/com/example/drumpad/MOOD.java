@@ -7,7 +7,7 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 
-public class Mood extends AppCompatActivity {
+public class MOOD extends AppCompatActivity {
 
     private SoundPool sp;
     private int mood01;
@@ -26,7 +26,7 @@ public class Mood extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drum_pad01);
+        setContentView(R.layout.activity_hip_hop);
 
         sp = new SoundPool(2, AudioManager.STREAM_MUSIC,0);
         mood01 = sp.load(getApplicationContext(),R.raw.mood01,1);

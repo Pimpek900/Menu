@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DrumPad2"></activity>
-        <activity android:name=".DrumPad1" />
-        <activity android:name=".Mood" />
-        <activity android:name=".DrumPad01" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".FUTURE"></activity>
+        <activity android:name=".HIP_HOP" />
+        <activity android:name=".MOOD" />
+        <activity android:name=".REGGAE" />
+        <activity android:name=".MENU">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
