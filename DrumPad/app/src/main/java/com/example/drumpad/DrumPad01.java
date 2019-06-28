@@ -10,15 +10,18 @@ import android.view.View;
 public class DrumPad01 extends AppCompatActivity {
 
     private SoundPool sp;
-    private int sound1;
-    private int sound2;
-    private int sound3;
-    private int sound4;
-    private int sound5;
-    private int sound6;
-    private int sound7;
-    private int sound8;
-    private int sound9;
+    private int hip_hop01;
+    private int hip_hop02;
+    private int hip_hop03;
+    private int hip_hop04;
+    private int hip_hop05;
+    private int hip_hop06;
+    private int hip_hop07;
+    private int hip_hop08;
+    private int hip_hop09;
+    private int hip_hop10;
+    private int hip_hop11;
+    private int hip_hop12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,25 +29,31 @@ public class DrumPad01 extends AppCompatActivity {
         setContentView(R.layout.activity_drum_pad01);
 
         sp = new SoundPool(2, AudioManager.STREAM_MUSIC,0);
-        sound1 = sp.load(getApplicationContext(),R.raw.sound1,1);
-        sound2 = sp.load(getApplicationContext(),R.raw.sound2,1);
-        sound3 = sp.load(getApplicationContext(),R.raw.sound3,1);
-        sound4 = sp.load(getApplicationContext(),R.raw.sound4,1);
-        sound5 = sp.load(getApplicationContext(),R.raw.sound5,1);
-        sound6 = sp.load(getApplicationContext(),R.raw.sound6,1);
-        sound7 = sp.load(getApplicationContext(),R.raw.sound7,1);
-        sound8 = sp.load(getApplicationContext(),R.raw.sound8,1);
-        sound9 = sp.load(getApplicationContext(),R.raw.sound9,1);
+        hip_hop01 = sp.load(getApplicationContext(),R.raw.hip_hop01,1);
+        hip_hop02 = sp.load(getApplicationContext(),R.raw.hip_hop02,1);
+        hip_hop03 = sp.load(getApplicationContext(),R.raw.hip_hop03,1);
+        hip_hop04 = sp.load(getApplicationContext(),R.raw.hip_hop04,1);
+        hip_hop05 = sp.load(getApplicationContext(),R.raw.hip_hop05,1);
+        hip_hop06 = sp.load(getApplicationContext(),R.raw.hip_hop06,1);
+        hip_hop07 = sp.load(getApplicationContext(),R.raw.hip_hop07,1);
+        hip_hop08 = sp.load(getApplicationContext(),R.raw.hip_hop08,1);
+        hip_hop09 = sp.load(getApplicationContext(),R.raw.hip_hop09,1);
+        hip_hop10 = sp.load(getApplicationContext(),R.raw.hip_hop10,1);
+        hip_hop11 = sp.load(getApplicationContext(),R.raw.hip_hop11,1);
+        hip_hop12 = sp.load(getApplicationContext(),R.raw.hip_hop12,1);
     }
-    public void playsound1(View view) { sp.play(sound1,0.5f,0.5f,0,0,1f); }
-    public void playsound2(View view) { sp.play(sound2,0.5f,0.5f,0,0,1f); }
-    public void playsound3(View view) { sp.play(sound3,0.5f,0.5f,0,0,1f); }
-    public void playsound4(View view) { sp.play(sound4,0.5f,0.5f,0,0,1f); }
-    public void playsound5(View view) { sp.play(sound5,0.5f,0.5f,0,0,1f); }
-    public void playsound6(View view) { sp.play(sound6,0.5f,0.5f,0,0,1f); }
-    public void playsound7(View view) { sp.play(sound7,0.5f,0.5f,0,0,1f); }
-    public void playsound8(View view) { sp.play(sound8,0.5f,0.5f,0,0,1f); }
-    public void playsound9(View view) { sp.play(sound9,0.5f,0.5f,0,0,1f); }
+    public void playsound1(View view) { sp.play(hip_hop01,0.5f,0.5f,0,0,1f); }
+    public void playsound2(View view) { sp.play(hip_hop02,0.5f,0.5f,0,0,1f); }
+    public void playsound3(View view) { sp.play(hip_hop03,0.5f,0.5f,0,0,1f); }
+    public void playsound4(View view) { sp.play(hip_hop04,0.5f,0.5f,0,0,1f); }
+    public void playsound5(View view) { sp.play(hip_hop05,0.5f,0.5f,0,0,1f); }
+    public void playsound6(View view) { sp.play(hip_hop06,0.5f,0.5f,0,0,1f); }
+    public void playsound7(View view) { sp.play(hip_hop07,0.5f,0.5f,0,0,1f); }
+    public void playsound8(View view) { sp.play(hip_hop08,0.5f,0.5f,0,0,1f); }
+    public void playsound9(View view) { sp.play(hip_hop09,0.5f,0.5f,0,0,1f); }
+    public void playsound10(View view) { sp.play(hip_hop10,0.5f,0.5f,0,0,1f); }
+    public void playsound11(View view) { sp.play(hip_hop11,0.5f,0.5f,0,0,1f); }
+    public void playsound12(View view) { sp.play(hip_hop12,0.5f,0.5f,0,0,1f); }
 
 
 }
