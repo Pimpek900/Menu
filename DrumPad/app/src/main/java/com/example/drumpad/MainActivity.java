@@ -18,4 +18,17 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, DrumPad01.class);
         startActivity(intent);
     }
+
+    public void DrumPadMood(View view){
+        Intent intent = new Intent(MainActivity.this, Mood.class);
+        startActivity(intent);
+    }
+    public void DrumPad01(View view){
+        Intent intent = new Intent(MainActivity.this, DrumPad1.class);
+        startActivity(intent);
+    }
+    public void DrumPad02(View view){
+        Intent intent = new Intent(MainActivity.this, DrumPad2.class);
+        startActivity(intent);
+    }
 }
