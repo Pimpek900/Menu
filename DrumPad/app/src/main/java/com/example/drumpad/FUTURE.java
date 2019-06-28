@@ -2,13 +2,24 @@ package com.example.drumpad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.AudioFormat;
 import android.media.AudioManager;
+import android.media.AudioRecord;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.media.SoundPool;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Process;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
-public class FUTURE extends AppCompatActivity {
+import java.io.IOException;
 
+public class FUTURE extends AppCompatActivity
+{
     private SoundPool sp;
     private int future01;
     private int future02;
@@ -24,7 +35,8 @@ public class FUTURE extends AppCompatActivity {
     private int future12;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hip_hop);
 
@@ -41,6 +53,7 @@ public class FUTURE extends AppCompatActivity {
         future10 = sp.load(getApplicationContext(),R.raw.future10,1);
         future11 = sp.load(getApplicationContext(),R.raw.future11,1);
         future12 = sp.load(getApplicationContext(),R.raw.future12,1);
+
     }
     public void playsound1(View view) { sp.play(future01,0.5f,0.5f,0,0,1f); }
     public void playsound2(View view) { sp.play(future02,0.5f,0.5f,0,0,1f); }
@@ -54,6 +67,4 @@ public class FUTURE extends AppCompatActivity {
     public void playsound10(View view) { sp.play(future10,0.5f,0.5f,0,0,1f); }
     public void playsound11(View view) { sp.play(future11,0.5f,0.5f,0,0,1f); }
     public void playsound12(View view) { sp.play(future12,0.5f,0.5f,0,0,1f); }
-
-
 }

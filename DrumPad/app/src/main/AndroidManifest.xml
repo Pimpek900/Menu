@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.drumpad">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FUTURE"></activity>
-        <activity android:name=".HIP_HOP" />
-        <activity android:name=".MOOD" />
-        <activity android:name=".REGGAE" />
-        <activity android:name=".MENU">
+        <activity android:name=".FUTURE" android:screenOrientation="portrait"> </activity>
+        <activity android:name=".HIP_HOP" android:screenOrientation="portrait"/>
+        <activity android:name=".MOOD" android:screenOrientation="portrait"/>
+        <activity android:name=".REGGAE" android:screenOrientation="portrait"/>
+        <activity android:name=".MENU" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
