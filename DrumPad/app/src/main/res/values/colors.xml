@@ -10,4 +10,6 @@
     <color name="orangeendcolor">#dda660</color>
     <color name="pinkstartcolor">#fd75a5</color>
     <color name="pinkendcolor">#ea1e77</color>
+    <color name="redstartcolor">#ff0000</color>
+    <color name="redendcolor">#ff471a</color>
 </resources>
