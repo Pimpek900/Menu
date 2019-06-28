@@ -24,7 +24,8 @@ public class REGGAE extends AppCompatActivity {
     private int reggae12;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hip_hop);
 
@@ -42,6 +43,7 @@ public class REGGAE extends AppCompatActivity {
         reggae11 = sp.load(getApplicationContext(),R.raw.reggae11,1);
         reggae12 = sp.load(getApplicationContext(),R.raw.reggae12,1);
     }
+
     public void playsound1(View view) { sp.play(reggae01,0.5f,0.5f,0,0,1f); }
     public void playsound2(View view) { sp.play(reggae02,0.5f,0.5f,0,0,1f); }
     public void playsound3(View view) { sp.play(reggae03,0.5f,0.5f,0,0,1f); }
@@ -54,6 +56,5 @@ public class REGGAE extends AppCompatActivity {
     public void playsound10(View view) { sp.play(reggae10,0.5f,0.5f,0,0,1f); }
     public void playsound11(View view) { sp.play(reggae11,0.5f,0.5f,0,0,1f); }
     public void playsound12(View view) { sp.play(reggae12,0.5f,0.5f,0,0,1f); }
-
 
 }

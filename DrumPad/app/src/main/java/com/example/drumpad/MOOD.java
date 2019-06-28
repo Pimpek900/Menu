@@ -24,7 +24,8 @@ public class MOOD extends AppCompatActivity {
     private int mood12;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hip_hop);
 
@@ -54,5 +55,4 @@ public class MOOD extends AppCompatActivity {
     public void playsound10(View view) { sp.play(mood10,0.5f,0.5f,0,0,1f); }
     public void playsound11(View view) { sp.play(mood11,0.5f,0.5f,0,0,1f); }
     public void playsound12(View view) { sp.play(mood12,0.5f,0.5f,0,0,1f); }
-
 }
